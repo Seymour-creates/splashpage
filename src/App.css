@@ -1,0 +1,153 @@
+body {
+  padding: 0% 10%;
+}
+
+.App {
+  display: grid;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "footer footer footer";
+  grid-template-rows: 5% 1fr 5%;
+}
+
+.App-logo {
+  height: 12vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  border: #68828a solid 5px;
+  grid-area: header;
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; */
+}
+
+.main{
+  border: #61dafb solid 5px;
+  grid-area: main;
+
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Reactron-logo{
+  /* border: red 3px solid; */
+  display: flex;
+  /* flex-direction: column; */
+}
+.R-back{
+  /* border: #282c34 3px solid; */
+  display: flex;
+  flex-direction: column;
+}
+.r-logo-back{
+  margin: 0%;
+  padding: 0%;
+}
+
+.R-front{
+  /* border: #282c34 3px solid; */
+  display: flex;
+  flex-direction: column;
+}
+
+.R-top-right{
+  /* border: #282c34 3px solid; */
+  display: flex;
+  flex-direction: column;
+}
+.r-logo-top-right{
+  height: 33vmin;
+  position: relative;
+  right: 125px;
+  bottom: 50px
+}
+
+.R-bottom-right{
+  /* border: #282c34 3px solid; */
+  display: flex;
+  flex-direction: column;
+}
+.r-logo-bottom-right{
+  height: 8vmin;
+  position: relative;
+  right: 100px;
+  bottom: 20px;
+}
+.br-1{
+  position: relative;
+  bottom: 70px;
+  right: 170px;
+}
+.br-2{
+  position: relative;
+  bottom: 75px;
+  right: 145px;
+}
+.br-3{
+  position: relative;
+  bottom: 80px;
+  right: 125px;
+}
+
+.eactron{
+  color: #61dafb;
+  font-size: 7rem;
+  font-weight: bolder;
+  position: relative;
+  right: 280px;
+  top: 260px;
+}
+
+
+
+.footer{
+  border: #a1e0f1 solid 5px;
+  grid-area: footer;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.NavBar {
+  display: grid;
+  grid-template-areas: "team_link website_link" ;
+  background-color: #61dafb;
+}
+
+.website_link {
+  grid-area: 'website_link';
+
+}
+
+.team_link {
+  grid-area: 'team_link';
+}

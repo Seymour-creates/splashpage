@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { NavBar } from './components/navbar';
 import AboutReactron from './components/AboutReactron';
+import TeamMembers from './components/team_members';
 
 function App() {
   return (
@@ -23,17 +24,19 @@ function App() {
             <div className="R-top-right">
               <img src={logo} className="App-logo r-logo-top-right" alt="logo" />
             </div>
-            <div className="R-bottom-right">
-              <img src={logo} className="App-logo r-logo-bottom-right br-1" alt="logo" />
-              <img src={logo} className="App-logo r-logo-bottom-right br-2" alt="logo" />
-              <img src={logo} className="App-logo r-logo-bottom-right br-3" alt="logo" />
+            <div className="R-bottom-right br-1">
+              <img src={logo} className="App-logo r-logo-bottom-right" alt="logo" />
+              <img src={logo} className="App-logo r-logo-bottom-right" alt="logo" />
+              <img src={logo} className="App-logo r-logo-bottom-right" alt="logo" />
             </div>
           </div>
           <div className="eactron">EACTRON</div>
         </div>
         <AboutReactron />
       </main>
-      <footer className="footer"></footer>
+      <footer className="footer">
+      <TeamMembers/>
+      </footer>
     </div>
   );
 }

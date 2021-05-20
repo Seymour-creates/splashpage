@@ -1,9 +1,16 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding: 0% 10%;
+  overflow: auto;
 }
 
 .App {
-  display: grid;
+  /* display: grid;
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -11,7 +18,7 @@ body {
   "header header header"
   "main main main"
   "footer footer footer";
-  grid-template-rows: 5% 1fr 5%;
+  grid-template-rows: 5% 1fr 5%; */
 }
 
 .App-logo {

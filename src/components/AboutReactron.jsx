@@ -1,20 +1,17 @@
-import react from 'react';
 
+import style from 'styled-components'
+import React from 'react'
 
-const AboutReactron =()=> {
-
-  return(
-    <div>
-      <p>It</p>
-      <p>Just</p>
-      <p>Works</p>
-    </div>
+export default function AboutReactron() {
+  return (
+    <AboutReactronStyled className="AboutReactron">
+      About Reaction
+    </AboutReactronStyled>
   )
-
 }
 
 
-
-
-
-export default AboutReactron;
+export const AboutReactronStyled = style.div`
+  border: 1px solid blue;
+  height: 200px;
+`;

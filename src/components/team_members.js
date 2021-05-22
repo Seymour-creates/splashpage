@@ -1,7 +1,5 @@
-// import { useEffect } from 'react';
-// // const { Octokit } = require("@octokit/core");
-// //import { Octokit } from "@octokit/core";
-const fetch = require('node-fetch');
+import styled from 'styled-components';
+import React from 'react';
 
 const getUser = async  () => {
   const users = ['seymour-creates', 'odylic','kerriannercrawford','n8innate','SteeleCoale'];
@@ -19,14 +17,15 @@ const getUser = async  () => {
 
 console.log(getUser());
 
+export default function team_members() {
+  return (
+    <div className="TeamMembersDiv">
+      <TeamMembersDiv>Team Members Div</TeamMembersDiv>
+    </div>
+  );
+}
 
-// const TeamMembers =()=> {
-    
-//   return (
-//     <div className="main-team-div">
-      
-//     </div>
-//   )
-// }
-
-// export default TeamMembers
+export const TeamMembersDiv = styled.div`
+  border: 1px solid black;
+  height: 200px;
+`;

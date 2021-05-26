@@ -29,18 +29,22 @@
 
 // export default TeamMembers
 
-import styled from 'styled-components';
 import React from 'react';
+import TeamMemberComponent from './TeamMemberComponent';
 
 export default function team_members() {
   return (
-    <div className="TeamMembersDiv">
-      <TeamMembersDiv>Team Members Div</TeamMembersDiv>
+    <div>
+      Team Members Header
+      <div className="TeamMembersDiv">
+          <TeamMemberComponent test={1} />
+          <TeamMemberComponent test={2} />
+          <TeamMemberComponent test={3} />
+          <TeamMemberComponent test={4} />
+      </div>
     </div>
   );
 }
 
-export const TeamMembersDiv = styled.div`
-  border: 1px solid black;
-  height: 200px;
-`;
+
+

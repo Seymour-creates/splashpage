@@ -1,17 +1,15 @@
-
-import style from 'styled-components'
 import React from 'react'
 
 export default function AboutReactron() {
   return (
-    <AboutReactronStyled className="AboutReactron">
-      About Reaction
-    </AboutReactronStyled>
+    <div>
+        About Reactron
+      <div className="AboutReactron">
+          <p>
+            Reactron is a React component visualizer that allows you to traverse an app's fiber tree and render components individually.
+          </p>
+      </div>
+    </div>
   )
 }
 
-
-export const AboutReactronStyled = style.div`
-  border: 1px solid blue;
-  height: 200px;
-`;

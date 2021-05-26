@@ -14,3 +14,6 @@ export default function TeamMemberComponent({test, image, github, linkedin}) {
   );
 }
 
+
+
+

@@ -4,36 +4,29 @@ import AboutReactron from './AboutReactron';
 import Logo from './Logo';
 import TeamMembers from './team_members';
 import GifDisplay from './gif_display';
-import styled from 'styled-components';
 
 export default function MainContainer() {
   return (
+<<<<<<< HEAD
     <Wrapper id="main-container-div">
       <MainContainerDiv>
+=======
+    <div className="Wrapper">
+      <div className="MainContainerDiv">
+>>>>>>> 723d4e7b8432a34abe9f8cd12985d33e800d184b
         <div className="App">
           <header className="header">
             <NavBar />
           </header>
-          <Logo />
+            <Logo />
           <main>
             <AboutReactron />
           </main>
-          <GifDisplay />
-          {/* <footer className="footer"><TeamMembers /></footer> */}
-          <TeamMembers />
+            <GifDisplay />
+            {/* <footer className="footer"><TeamMembers /></footer> */}
+            <TeamMembers />
         </div>
-      </MainContainerDiv>
-    </Wrapper>
+      </div>
+    </div>
   );
 }
-
-export const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-
-`;
-
-export const MainContainerDiv = styled.div`
-  max-width: 850px;
-  text-align: center;
-`;

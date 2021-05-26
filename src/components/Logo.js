@@ -1,17 +1,11 @@
 import React from 'react';
-// import logo from '../src/Reactron_Logo.png';
-import style from 'styled-components';
+import logo from '../logo.svg';
 
 export default function Logo() {
   return (
-    <LogoStyledDiv>
       <main className="main">
       {/* <img src={logo} alt={'Logo'} /> */}
       </main>
-    </LogoStyledDiv>
+
   );
 }
-
-export const LogoStyledDiv = style.div`
-  border: 2px solid red;
-`;

@@ -8,7 +8,7 @@ import styled from 'styled-components';
 
 export default function MainContainer() {
   return (
-    <Wrapper>
+    <Wrapper id="main-container-div">
       <MainContainerDiv>
         <div className="App">
           <header className="header">

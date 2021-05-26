@@ -16,19 +16,19 @@ body {
   border: #68828a solid 15px;
   min-height: 100vh;
   height: auto;
-  min-width: 80%;
+  /* width: 80%; */
+  width: clamp(200px, 80%, 80%);
+
+  display: grid;
+  grid-template-areas: 
+  "head head";
+  /* "nav  main"
+  "nav  foot"; */
+  grid-template-columns: 1fr;
 }
 
-.App {
-  /* display: grid;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  grid-template-areas: 
-  "header header header"
-  "main main main"
-  "footer footer footer";
-  grid-template-rows: 5% 1fr 5%; */
+#main-container-div {
+  grid-area: head;
 }
 
 .header {

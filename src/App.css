@@ -5,9 +5,12 @@
   color: white;
 }
 
+
 body {
-  padding: 0% 10%;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,40 +21,27 @@ body {
   background-color: rgba(31, 31, 31, 0.986);
 }
 
-.App {
-  /* display: grid;
+#root {
+  /* border: #68828a solid 15px; */
   min-height: 100vh;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  /* width: 80%; */
+  width: clamp(200px, 80%, 80%);
+
+  /* display: grid;
   grid-template-areas: 
-  "header header header"
-  "main main main"
-  "footer footer footer";
-  grid-template-rows: 5% 1fr 5%; */
+  "head head"; */
+  /* "nav  main"
+  "nav  foot"; */
+  grid-template-columns: 1fr;
 }
 
-.App-logo {
-  height: 12vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-container-div {
+  /* grid-area: head; */
 }
 
 .header {
-  border: #68828a solid 5px;
+  box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
   grid-area: header;
   /* background-color: #282c34; */
   /* min-height: 100vh; */
@@ -64,7 +54,7 @@ body {
 }
 
 .main{
-  border: #61dafb solid 5px;
+  box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
   grid-area: main;
 
   padding-top: 50px;
@@ -73,88 +63,7 @@ body {
   flex-direction: column;
 }
 
-.Reactron-logo{
-  /* border: red 3px solid; */
-  display: flex;
-  /* flex-direction: column; */
-}
-.R-back{
-  /* border: #282c34 3px solid; */
-  display: flex;
-  flex-direction: column;
-  border-left: 3px #61dafb solid;
-  border-right: 3px #61dafb solid;
-}
-.r-logo-back{
-  margin: 0%;
-  padding: 0%;
-}
 
-.R-front{
-  /* border: #282c34 3px solid; */
-  display: flex;
-  flex-direction: column;
-}
-
-.R-top-right{
-  /* background-color: aliceblue; */
-  display: flex;
-  flex-direction: column;
-  border: 3px #61dafb solid;
-  border-radius: 50%;
-  background-size: 15%;
-
-  position: relative;
-  right: 125px;
-  bottom: 50px;
-}
-.r-logo-top-right{
-  height: 33vmin;
-}
-
-.R-bottom-right{
-  /* border: #282c34 3px solid; */
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 100px;
-  bottom: 20px;
-}
-.r-logo-bottom-right{
-  height: 8vmin;
-}
-
-.br-1{
-  position: relative;
-  bottom: 70px;
-  right: 170px;
-  border-left: 3px #61dafb solid;
-  border-right: 3px #61dafb solid;
-}
-.br-2{
-  position: relative;
-  bottom: 75px;
-  right: 145px;
-  border-left: 3px #61dafb solid;
-  border-right: 3px #61dafb solid;
-}
-.br-3{
-  position: relative;
-  bottom: 80px;
-  right: 125px;
-  border-left: 3px #61dafb solid;
-  border-right: 3px #61dafb solid;
-  border-bottom: 3px #61dafb solid;
-}
-
-.eactron{
-  color: #61dafb;
-  font-size: 7rem;
-  font-weight: bolder;
-  position: relative;
-  right: 280px;
-  top: 260px;
-}
 
 
 
@@ -171,7 +80,8 @@ body {
 .NavBar {
   display: grid;
   grid-template-areas: "team_link website_link" ;
-  background-color: #61dafb;
+  background-color: rgb(142 142 142);
+  height: 2.2em;
 }
 
 .website_link {

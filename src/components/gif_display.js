@@ -1,11 +1,13 @@
 import React from 'react';
-import style from 'styled-components';
+import demo from '../assets/demo.png';
 
 export default function gif_display() {
-  return <GifDisplayDiv>Gif Display Div</GifDisplayDiv>;
+  return (
+    <div>
+      <h2> Demo </h2>
+      <div className="GifDisplayDiv">
+        <img src={demo} alt="demo"></img>
+      </div>
+    </div>
+  );
 }
-
-export const GifDisplayDiv = style.div`
-  border: 1px solid red;
-  height: 200px;
-`;

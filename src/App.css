@@ -2,6 +2,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 body {
@@ -11,7 +12,10 @@ body {
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(226, 226, 226, 0.103);
+  /* lighter option */
+  /* background-color: rgba(226, 226, 226, 0.103); */
+  /* dark option */
+  background-color: rgba(31, 31, 31, 0.986);
 }
 
 .App {
@@ -217,18 +221,21 @@ h2 {
   padding: 3px;
   border-radius: 7px;
   box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
+  background-color: rgba(31, 31, 31, 0.603);
+  margin: 3px;
 }
 
 .TeamMemberComponentDiv > a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.4em;
   font-weight: bold;
   padding: 10px;
+  
 }
 
 .TeamMemberComponentDiv > a:hover{
-  color: purple;
+  color: grey;
 }
 
 
@@ -241,6 +248,7 @@ h2 {
   place-items: center;
   border-radius: 5px;
   box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
+  background-color: rgba(20, 20, 20, 0.699);
 }
 
 
@@ -274,7 +282,7 @@ h2 {
     grid-template:
       1fr
       1fr/ 1fr 1fr;
-    height: 700px;
+    height: 800px;
   }
 }
 
@@ -282,6 +290,6 @@ h2 {
   .TeamMembersDiv {
     display: flex;
     flex-flow: column;
-    height: 1000px;
+    height: 1200px;
   }
 }

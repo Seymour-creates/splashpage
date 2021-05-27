@@ -5,9 +5,11 @@ console.log('logo')
 
 export default function Logo() {
   return (
-      <main className="main">
-      <img id="logo" src={logo} alt={'Logo'} />
-      </main>
+    <div className="logo">
+      <div className='logoWrapper'>
+        <img id="logo" src={logo} alt={'Logo'} />
+      </div>
+    </div>
 
   );
 }

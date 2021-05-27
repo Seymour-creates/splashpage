@@ -27,7 +27,7 @@ import Romelopfp from '../assets/Romelopfp.jpeg';
 export default function team_members() {
   return (
     <div className="TeamMembersWrapper">
-      <h2>Team Members</h2>
+      <h2>Meet the Reactron Team</h2>
       <div className="TeamMembersDiv">
         <TeamMemberComponent
           test={1}

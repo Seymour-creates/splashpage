@@ -10,29 +10,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(158, 158, 158, 0.349);
 }
 
 #root {
-  border: #68828a solid 15px;
+  /* border: #68828a solid 15px; */
   min-height: 100vh;
   height: auto;
   /* width: 80%; */
   width: clamp(200px, 80%, 80%);
 
-  display: grid;
+  /* display: grid;
   grid-template-areas: 
-  "head head";
+  "head head"; */
   /* "nav  main"
   "nav  foot"; */
   grid-template-columns: 1fr;
 }
 
 #main-container-div {
-  grid-area: head;
+  /* grid-area: head; */
 }
 
 .header {
-  border: #68828a solid 5px;
+  box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
   grid-area: header;
   /* background-color: #282c34; */
   /* min-height: 100vh; */
@@ -45,7 +50,7 @@ body {
 }
 
 .main{
-  border: #61dafb solid 5px;
+  box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
   grid-area: main;
 
   padding-top: 50px;
@@ -71,7 +76,8 @@ body {
 .NavBar {
   display: grid;
   grid-template-areas: "team_link website_link" ;
-  background-color: #61dafb;
+  background-color: rgb(142 142 142);
+  height: 2.2em;
 }
 
 .website_link {
@@ -85,32 +91,58 @@ body {
 
 .AboutReactron {
   /* border: 1px solid blue; */
-  height: 200px;
   display: grid;
   place-items: center;
   box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
   border-radius: 5px;
   margin: 20px 0;
+  padding: 70px;
 }
 
 
 .GifDisplayDiv {
   /* border: 1px solid red; */
-  height: 200px;
+  /* height: 200px; */
   box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
   border-radius: 5px;
   margin: 20px 0;
+
+}
+
+img {
+  width: 100%;
+  
+}
+
+.TeamMembersWrapper > h2 {
+  padding: 15px;
 }
 
 .TeamMemberComponentDiv {
+  padding: 3px;
+  border-radius: 7px;
   box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
 }
 
+.TeamMemberComponentDiv > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.TeamMemberComponentDiv > a:hover{
+  color: purple;
+}
+
+
+
 .TeamMembersDiv {
   /* border: 1px solid black; */
-  height: 200px;
+  height: 300px;
   display: grid;
-  grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+  grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr;
   place-items: center;
   border-radius: 5px;
   box-shadow: 0px 8px 24px 0px rgb(149, 157, 165, 0.411);
@@ -131,7 +163,12 @@ body {
 
 
 
-
+.profileImage {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+}
 
 
 
@@ -142,6 +179,7 @@ body {
     grid-template:
       1fr
       1fr/ 1fr 1fr;
+    height: 700px;
   }
 }
 
@@ -149,6 +187,6 @@ body {
   .TeamMembersDiv {
     display: flex;
     flex-flow: column;
-    height: 400px;
+    height: 1000px;
   }
 }

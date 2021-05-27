@@ -10,10 +10,10 @@ export default function MainContainer() {
     <div className="Wrapper">
       <div className="MainContainerDiv">
         <div className="App">
+            <Logo />
           <header className="header">
             <NavBar />
           </header>
-            <Logo />
           <main>
             <AboutReactron />
           </main>
